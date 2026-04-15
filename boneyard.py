@@ -78,7 +78,7 @@ if __name__ == "__main__":
 
     # Correct tile counts per set size
     # Formula: (n+1)(n+2)/2
-    for max_pip, expected in [(6, 28), (9, 55), (12, 91)]:
+    for max_pip, expected in [(6, 28), (9, 55), (12, 91), (15, 136), (18, 190)]:
         b = Boneyard(max_pip)
         assert len(b) == expected, f"Expected {expected} tiles for double-{max_pip}, got {len(b)}"
         print(f"Double-{max_pip} set: {len(b)} tiles ✓")
